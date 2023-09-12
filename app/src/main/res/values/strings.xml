@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RandomGame</string>
+    <string name="you_win">Ви виграли!</string>
+    <string name="you_lost">Ви програли. Спробуйте ще раз</string>
+    <string name="too_much">Занадто велике число</string>
+    <string name="not_enough">Занадто мале число</string>
+    <string name="confirm">Підтвердити</string>
+    <string name="put_number">Введіть число від 1 до 100</string>
+    <string name="game_again">Грати знову</string>
+    <string name="start">Почати гру</string>
+    <string name="attempt"> Залишилося спроб:</string>
+    <string name="enter_number">Будь ласка, введіть число</string>
+</resources>

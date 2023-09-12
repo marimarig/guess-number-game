@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RandomGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_pink</item>
+        <item name="android:windowBackground">@color/pistachio</item><!-- Ніжно рожевий -->
+        <item name="colorOnPrimary">@color/black</item> <!-- Чорний текст на ніжно рожевому -->
+        <item name="android:textColorPrimary">@color/black</item> <!-- Чорний текст на ніжно рожевому -->
+        <item name="colorSecondary">@color/pistachio</item> <!-- Фісташковий -->
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.RandomGame" parent="Base.Theme.RandomGame" />
+</resources>

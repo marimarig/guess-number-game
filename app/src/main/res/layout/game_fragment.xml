@@ -1,13 +1,14 @@
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context = ".ui.GameFragment">
+    tools:context=".ui.GameFragment">
 
     <data>
+
         <variable
             name="gameViewModel"
             type="com.example.randomgame.viewmodel.GameViewModel" />
+
         <variable
             name="gameFragment"
             type="com.example.randomgame.ui.GameFragment" />
@@ -21,21 +22,24 @@
 
         <EditText
             android:id="@+id/guessNumber"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
             android:hint="@string/put_number"
             android:inputType="number"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp" />
+            android:paddingLeft="16dp" />
 
         <Button
             android:id="@+id/confirm_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/confirm"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:onClick='@{() -> gameFragment.goToNextScreen()}'/>
+            android:onClick='@{() -> gameFragment.goToNextScreen()}'
+            android:text="@string/confirm"
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageView"

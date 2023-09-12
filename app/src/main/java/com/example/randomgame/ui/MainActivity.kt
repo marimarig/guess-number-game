@@ -8,8 +8,10 @@ import com.example.randomgame.R
 import com.example.randomgame.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    // Binding object instance corresponding to the activity_main.xml layout
-    // when the view hierarchy is attached to the fragment.
+    /**
+    * Binding object instance corresponding to the activity_main.xml layout
+    * when the view hierarchy is attached to the fragment.
+    */
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 

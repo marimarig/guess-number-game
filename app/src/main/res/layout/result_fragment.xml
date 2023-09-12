@@ -9,7 +9,7 @@
 
         <variable
             name="viewModelResult"
-            type="com.example.randomgame.model.GameViewModel" />
+            type="com.example.randomgame.viewmodel.GameViewModel" />
 
         <variable
             name="resultFragment"

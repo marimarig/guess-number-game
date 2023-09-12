@@ -23,7 +23,7 @@ A "Play Again" button for restarting the game.
 - Error handling and response validation from the API are implemented.
   
 ## Code Structure
-Mystery Number Challenge adheres to the MVVM (Model-View-ViewModel) architecture pattern for a clean and organized codebase. Key points include:
+Guess the Number adheres to the MVVM (Model-View-ViewModel) architecture pattern for a clean and organized codebase. Key points include:
 
 - Well-structured and documented code.
 - Implementation of coroutines for asynchronous operations.

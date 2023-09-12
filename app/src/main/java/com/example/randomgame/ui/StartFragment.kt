@@ -10,7 +10,10 @@ import com.example.randomgame.R
 
 import com.example.randomgame.databinding.StartFragmentBinding
 
-
+/**
+ * A Fragment representing the starting screen of the app.
+ * It includes a "Почати" button that, when clicked, navigates to the GameFragment.
+ */
 class StartFragment : Fragment() {
     private var _binding: StartFragmentBinding? = null
 

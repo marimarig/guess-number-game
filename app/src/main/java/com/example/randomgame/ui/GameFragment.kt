@@ -10,15 +10,17 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.randomgame.R
 import com.example.randomgame.databinding.GameFragmentBinding
-import com.example.randomgame.model.GameViewModel
+import com.example.randomgame.viewmodel.GameViewModel
 
 class GameFragment : Fragment() {
+    // Obtain a reference to the shared ViewModel using activityViewModels.
     private val viewModel: GameViewModel by activityViewModels()
 
+    // View binding for the Fragment layout.
     private var _binding: GameFragmentBinding? = null
-
     private val binding get() = _binding!!
 
+    // Inflate the Fragment's layout when creating the view.
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,6 +30,7 @@ class GameFragment : Fragment() {
         return binding.root
     }
 
+    // Set up data binding and lifecycle owner when the view is created.
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
@@ -37,6 +40,10 @@ class GameFragment : Fragment() {
         }
     }
 
+    /**
+     * Function to handle user input and game logic
+     * when the "Next" button is pressed.
+     */
     fun goToNextScreen() {
         val userGuess = binding.guessNumber.text.toString().toIntOrNull()
         if (userGuess != null) {
@@ -47,6 +54,7 @@ class GameFragment : Fragment() {
         }
     }
 
+    // Function to check the game result and navigate to the result screen if needed.
     private fun checkGameResult() {
         val resultMessage = viewModel.resultMessage.value
         val attemptsLeft = viewModel._attemptsLeft
@@ -64,14 +72,17 @@ class GameFragment : Fragment() {
         }
     }
 
+    // Function to navigate to the result fragment.
     private fun navigateToResultFragment() {
         findNavController().navigate(R.id.action_gameFragment_to_resultFragment)
     }
 
+    // Function to show a toast message.
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
 
+    // Clean up the view binding when the view is destroyed.
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

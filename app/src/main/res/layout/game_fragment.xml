@@ -7,7 +7,7 @@
     <data>
         <variable
             name="gameViewModel"
-            type="com.example.randomgame.model.GameViewModel" />
+            type="com.example.randomgame.viewmodel.GameViewModel" />
         <variable
             name="gameFragment"
             type="com.example.randomgame.ui.GameFragment" />

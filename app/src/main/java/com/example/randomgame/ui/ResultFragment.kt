@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.randomgame.R
 import com.example.randomgame.databinding.ResultFragmentBinding
-import com.example.randomgame.model.GameViewModel
+import com.example.randomgame.viewmodel.GameViewModel
 
 class ResultFragment : Fragment() {
     private var _binding: ResultFragmentBinding? = null
@@ -42,8 +42,14 @@ class ResultFragment : Fragment() {
         })
     }
 
+    // Function to restart the game when the user taps a button.
     fun restartGame() {
         viewModel.startNewGame()
         findNavController().navigate(R.id.action_resultFragment_to_gameFragment)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

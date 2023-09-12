@@ -1,8 +1,9 @@
-package com.example.randomgame.api
+package com.example.randomgame.model
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+// Singleton object for managing Retrofit instance
 object RetrofitInstance {
     private const val BASE_URL = "https://www.random.org/"
 
@@ -13,6 +14,7 @@ object RetrofitInstance {
             .build()
     }
 
+    // Create an instance of the API interface using lazy initialization
     val api: RandomApi by lazy {
         retrofit.create(RandomApi::class.java)
     }

@@ -1,9 +1,9 @@
-﻿#  🎲 RandomGame 🎲 
+﻿#  🎲 Guess The Number 🎲 
 
- Welcome to 'Random Game', an exciting Android app that puts your guessing skills to the test! Immerse yourself in the thrill of deciphering a hidden number within a limited number of attempts.
+ Welcome to 'Guess the Number', an exciting Android app that puts your guessing skills to the test! Immerse yourself in the thrill of deciphering a hidden number within a limited number of attempts.
 
  ## UI 📱️ 
-Random Game offers a user-friendly interface with the following screens:
+'Guess the Number' offers a user-friendly interface with the following screens:
 
 - Start Screen:
 A welcoming start screen with a "Start Game" button to initiate the challenge.
@@ -39,7 +39,7 @@ Mystery Number Challenge adheres to the MVVM (Model-View-ViewModel) architecture
 ! Note: Ensure an active internet connection for random number generation via the Random.org API.
 
 ## Getting Started
-To get started with Mystery Number Challenge, follow these steps:
+To get started with 'Guess the number', follow these steps:
 
 1) Clone the repository.
 2) Open the project in Android Studio.
